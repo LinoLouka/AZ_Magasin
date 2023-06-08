@@ -30,7 +30,7 @@ html body header #purchase {
 }
 html body header img {
   color: rgb(229, 231, 235);
-  width: 10%;
+  width: 40%;
 }
 html body main #top {
   display: grid;
@@ -70,4 +70,4 @@ html body #checkout_form #checkout-btn-container #checkout-btn {
   height: 40px;
   background-color: #3b82f6;
   font-size: 25px;
-}
+}/*# sourceMappingURL=style.css.map */
