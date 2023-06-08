@@ -1,0 +1,39 @@
+body {
+  font-family: "Merriweather Sans", sans-serif;
+  background: linear-gradient(rgb(17, 24, 39) 0%, rgb(0, 0, 0) 100%) no-repeat;
+}
+body #checkout_form {
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  background-color: #e5ece9;
+  color: #211a1e;
+}
+body #checkout_form #form_title {
+  text-align: center;
+  padding-top: 20px;
+}
+body #checkout_form .form_data {
+  display: flex;
+  flex-direction: column;
+  border-radius: 7px;
+  margin: 10px;
+  padding-left: 10px;
+}
+body #checkout_form .form_data input {
+  border-radius: 7px;
+  height: 20px;
+}
+body #checkout_form .form_data label {
+  padding-bottom: 10px;
+}
+body #checkout_form #checkout-btn-container {
+  text-align: center;
+  margin-bottom: 50px;
+}
+body #checkout_form #checkout-btn-container #checkout-btn {
+  width: 250px;
+  height: 40px;
+  background-color: #3b82f6;
+  font-size: 25px;
+}
