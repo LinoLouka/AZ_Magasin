@@ -10,17 +10,75 @@
 <header>
   <p>AZ[store]</p>
   <div>
-    <p>Home</p>
-    <p>About</p>
-    <p>Product</p>
-    <p>Contact</p>
+    <a href="">Home</a>
+    <a href="">About</a>
+    <a href="">Product</a>
+    <a href="">Contact</a>
   </div>
   <img src="/assets/img/shopping-cart.svg" alt="panier d'achat">
   <p>Login</p>
 </header>
 
 <body>
-  <main></main>
+  <main>
+    <div id="top">
+      <h1>SHOE THE RIGHT ONE.</h1>
+      <input type="submit" value="See our store">
+      <img src="/assets/img/shoe_one.png" alt="chaussure nike1">
+    </div>
+    <section id="display_last-products">
+      <h2>Our last products</h2>
+      <div id="last-products">
+        <img src="/assets/img/shoe_one.png" alt="chaussure nike1">
+        <p>NIKE Air</p>
+        <p>234€</p>
+        <input type="submit" value="Add to card">
+      </div>
+      <div id="last-products">
+        <img src="/assets/img/shoe_one.png" alt="chaussure nike1">
+        <p>NIKE Air</p>
+        <p>234€</p>
+        <input type="submit" value="Add to card">
+      </div>
+      <div id="last-products">
+        <img src="/assets/img/shoe_one.png" alt="chaussure nike1">
+        <p>NIKE Air</p>
+        <p>234€</p>
+        <input type="submit" value="Add to card">
+      </div>
+      <div id="last-products">
+        <img src="/assets/img/shoe_one.png" alt="chaussure nike1">
+        <p>NIKE Air</p>
+        <p>234€</p>
+        <input type="submit" value="Add to card">
+      </div>
+    </section>
+    <div id="bottom">
+      <img src="/assets/img/shoe_two.png" alt="chaussure nike2">
+      <h2>WE PROVIDE YOU THE BEST QUALITY.</h2>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia quisquam molestiae temporibus, voluptas commodi iste exercitationem nisi eveniet maxime, porro doloribus dolor voluptates, fuga quibusdam est? Fugit unde impedit asperiores.</p>
+    </div>
+    <section id="user-reviews">
+      <div id="emily">
+        <img src="/assets/img/image-emily.jpg" alt="photo d'Emily">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam provident, tenetur culpa earum maiores adipisci nobis asperiores impedit? Distinctio, repudiandae veniam. Dolorem laborum, quia doloremque animi asperiores temporibus modi necessitatibus!</p>
+      </div>
+      <div id="thomas">
+        <img src="/assets/img/image-thomas.jpg" alt="photo de Thomas">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, provident aspernatur? Perspiciatis ab dolor adipisci tempore itaque cum, aliquid voluptate magni, sequi debitis nostrum necessitatibus qui ipsa similique nihil rerum.</p>
+      </div>
+      <div id="jennie">
+        <img src="/assets/img/image-jennie.jpg" alt="photo de Jennie">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit suscipit numquam cum officiis eveniet, mollitia voluptas? Quia totam perferendis, eius facere ipsam ducimus autem similique hic, vitae dignissimos inventore distinctio.</p>
+      </div>
+    </section>
+  </main>
 </body>
+<footer>
+  <a href="">Home</a>
+  <a href="">About</a>
+  <a href="">Product</a>
+  <a href="">Contact</a>
+</footer>
 
 </html>
