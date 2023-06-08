@@ -7,6 +7,8 @@
     <title>AZ_Magasin</title>
   </head>
   <body>
-    <main></main>
+    <main>
+      <h1>test</h1>
+    </main>
   </body>
 </html>
