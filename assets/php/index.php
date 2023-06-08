@@ -7,6 +7,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>AZ_Magasin</title>
 </head>
+<header>
+  <p>AZ[store]</p>
+  <div>
+    <p>Home</p>
+    <p>About</p>
+    <p>Product</p>
+    <p>Contact</p>
+  </div>
+  <img src="/assets/img/shopping-cart.svg" alt="panier d'achat">
+  <p>Login</p>
+</header>
 
 <body>
   <main></main>
