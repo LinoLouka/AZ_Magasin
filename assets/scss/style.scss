@@ -1,13 +1,28 @@
-body {
-  text-align: center;
-  background: linear-gradient(
-    rgba(17, 24, 39, 255) 0%,
-    rgba(0, 0, 0, 255) 100%
-  );
-  color: rgba(229, 231, 235, 255);
-  header {
+html {
+  body {
+    text-align: center;
+    background: linear-gradient(
+      rgba(17, 24, 39, 255) 0%,
+      rgba(0, 0, 0, 255) 100%
+    );
+    color: rgba(229, 231, 235, 255);
     img {
-      color: rgba(229, 231, 235, 255);
+      max-width: 100%;
+      max-height: 100%;
+    }
+    header {
+      display: flex;
+      #purchase {
+        display: flex;
+      }
+      img {
+        color: rgba(229, 231, 235, 255);
+        width: 10%;
+      }
+    }
+    main {
+      #top {
+      }
     }
   }
 }

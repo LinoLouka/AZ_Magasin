@@ -10,16 +10,15 @@
 </head>
 <header>
     <p>AZ[store]</p>
-    <div>
-        <a href="">Home</a>
-        <a href="">About</a>
-        <a href="">Product</a>
-        <a href="">Contact</a>
-    </div>
-    <a href="">
+    <a href="">Home</a>
+    <a href="">About</a>
+    <a href="">Product</a>
+    <a href="">Contact</a>
+    <div id="purshase" <a href="">
         <img src="https://raw.githubusercontent.com/LinoLouka/AZ_Magasin/3ef0522ef23659144f7f8753972689d929a7bc56/assets/img/shopping-cart-white.svg" alt="panier d'achat">
-    </a>
-    <p>Login</p>
+        </a>
+        <p>Login</p>
+    </div>
 </header>
 
 <body>

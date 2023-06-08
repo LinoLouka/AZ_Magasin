@@ -8,24 +8,48 @@
   <title>AZ_Magasin</title>
   <link rel="stylesheet" href="../css/style.css">
 </head>
-<?php include './partials/header.php'; ?>
+<?php include './views/header.php'; ?>
 
 <body>
   <main>
     <div id="top">
       <h1>SHOE THE RIGHT ONE.</h1>
-      <input type="submit" value="See our store">
+      <input type="submit" id="see" value="See our store">
       <img src="https://github.com/LinoLouka/AZ_Magasin/blob/main/assets/shoe_one.png?raw=true" alt="chaussure nike1">
-
     </div>
     <section id="display_last-products">
       <h2>Our last products</h2>
-      <div id="last-products">
-        <img src="https://github.com/LinoLouka/AZ_Magasin/blob/main/assets/shoe_one.png?raw=true" alt="chaussure nike1">
-        <p>NIKE Air</p>
-        <p>234€</p>
-        <input type="submit" value="Add to card">
-      </div>
+      <?php
+      $shoes = [
+        [
+          'id' => 1,
+          'product' => 'Nike Air Max 270',
+          'price' => 160,
+          'image_url' => '../img/shoe_one.png'
+        ]
+      ];
+
+      function repeatShoes($shoes, $repetitions)
+      {
+        $result = [];
+
+        for ($i = 0; $i < $repetitions; $i++) {
+          $result = array_merge($result, $shoes);
+        }
+
+        return $result;
+      }
+
+      $repeatedShoes = repeatShoes($shoes, 4);
+
+      // Afficher les chaussures
+      foreach ($repeatedShoes as $shoe) {
+        echo 'Product: ' . $shoe['product'] . ', Price: ' . $shoe['price'] . '<br>';
+        echo '<img src="' . $shoe['image_url'] . '" alt="' . $shoe['product'] . '"><br>';
+      }
+      ?>
+
+
     </section>
     <div id="bottom">
       <img src="https://github.com/LinoLouka/AZ_Magasin/blob/main/assets/shoe_two.png?raw=true" alt="chaussure nike2">
@@ -48,6 +72,6 @@
     </section>
   </main>
 </body>
-<?php include './partials/footer.php'; ?>
+<?php include './views/footer.php'; ?>
 
 </html>
