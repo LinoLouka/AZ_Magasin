@@ -19,31 +19,31 @@
 
 
             <div class="form_data"><label for="first_name">First Name:</label>
-                <input type="text" id="form_first_name" name="first_name" required><br><br>
+                <input type="text" class="" name="first_name" required><br><br>
             </div>
 
             <div class="form_data"><label for="last_name">Last Name:</label>
-                <input type="text" id="form_last_name" name="last_name" required><br><br>
+                <input type="text" class="form_input" name="last_name" required><br><br>
             </div>
 
             <div class="form_data"><label for="email">Email:</label>
-                <input type="email" id="form_email" name="email" required><br><br>
+                <input type="email" class="form_input" name="email" required><br><br>
             </div>
 
             <div class="form_data"><label for="address">Address:</label>
-                <input type="text" id="form_address" name="address" required><br><br>
+                <input type="text" class="form_input" name="address" required><br><br>
             </div>
 
             <div class="form_data"><label for="city">City:</label>
-                <input type="text" id="form_city" name="city" required><br><br>
+                <input type="text" class="form_input" name="city" required><br><br>
             </div>
 
             <div class="form_data"><label for="zip_code">Zip Code:</label>
-                <input type="number" id="form_zip_code" name="zip_code" required><br><br>
+                <input type="number" class="form_input" name="zip_code" required><br><br>
             </div>
 
             <div class="form_data"><label for="country">Country:</label>
-                <input type="text" id="form_country" required>
+                <input type="text" class="form_input" required>
             </div>
 
 
