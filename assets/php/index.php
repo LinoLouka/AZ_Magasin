@@ -14,8 +14,8 @@
   <main>
     <div id="top">
       <h1>SHOE THE RIGHT ONE.</h1>
-      <input type="submit" id="see" value="See our store">
       <img src="https://github.com/LinoLouka/AZ_Magasin/blob/main/assets/shoe_one.png?raw=true" alt="chaussure nike1">
+      <input type="submit" id="shoestop" value="See our store">
     </div>
     <section id="display_last-products">
       <h2>Our last products</h2>
@@ -44,12 +44,11 @@
 
       // Afficher les chaussures
       foreach ($repeatedShoes as $shoe) {
-        echo 'Product: ' . $shoe['product'] . ', Price: ' . $shoe['price'] . '<br>';
         echo '<img src="' . $shoe['image_url'] . '" alt="' . $shoe['product'] . '"><br>';
-      }
+        echo 'Product: ' . $shoe['product'] . ', Price: ' . $shoe['price'] . '<br>';
+        echo '<input type="submit" class="shoes" value="Add to card">';
+      };
       ?>
-
-
     </section>
     <div id="bottom">
       <img src="https://github.com/LinoLouka/AZ_Magasin/blob/main/assets/shoe_two.png?raw=true" alt="chaussure nike2">

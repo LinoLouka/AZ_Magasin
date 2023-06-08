@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <header>
-    <p>AZ[store]</p>
+    <h2>AZ[store]</h2>
     <a href="">Home</a>
     <a href="">About</a>
     <a href="">Product</a>

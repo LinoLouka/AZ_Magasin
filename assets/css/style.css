@@ -1,7 +1,22 @@
 html body {
   text-align: center;
-  background: linear-gradient(rgb(17, 24, 39) 0%, rgb(0, 0, 0) 100%);
+  background: linear-gradient(rgb(17, 24, 39) 70%, rgb(0, 0, 0) 100%);
   color: rgb(229, 231, 235);
+}
+html body input {
+  outline: none;
+  border: none;
+}
+html body #shoestop {
+  justify-self: center;
+  background: linear-gradient(to right, rgb(59, 130, 246) 60%, rgb(31, 60, 141) 100%);
+  border-radius: 5px;
+  width: 100px;
+}
+html body .shoes {
+  justify-self: center;
+  background-color: #3b82f6;
+  border-radius: 5px;
 }
 html body img {
   max-width: 100%;
@@ -16,4 +31,7 @@ html body header #purchase {
 html body header img {
   color: rgb(229, 231, 235);
   width: 10%;
+}
+html body main #top {
+  display: grid;
 }/*# sourceMappingURL=style.css.map */
