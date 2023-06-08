@@ -8,7 +8,7 @@
   <title>AZ_Magasin</title>
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<?php include '/opt/lampp/htdocs/variable/AZ_Magasin/assets/views/partials/header.php'; ?>
+<?php include './assets/views/partials/header.php'; ?>
 
 <body>
   <main>
@@ -25,7 +25,7 @@
           'id' => 1,
           'product' => 'Nike Air Max 270',
           'price' => 160,
-          'image_url' => '../img/shoe_one.png'
+          'image_url' => './assets/img/shoe_one.png'
         ]
       ];
 
