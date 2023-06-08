@@ -36,6 +36,7 @@ html body main #top {
   display: grid;
 }
 html body #checkout_form {
+  text-align: start;
   display: flex;
   flex-direction: column;
   border-radius: 15px;
