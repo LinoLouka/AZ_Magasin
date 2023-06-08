@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8" />
@@ -7,17 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>AZ_Magasin</title>
 </head>
-<header>
-  <p>AZ[store]</p>
-  <div>
-    <a href="">Home</a>
-    <a href="">About</a>
-    <a href="">Product</a>
-    <a href="">Contact</a>
-  </div>
-  <img src="https://raw.githubusercontent.com/LinoLouka/AZ_Magasin/e54b9a2a1be2b3549c48fc6b1b3580afaf46cb18/assets/shopping-cart.svg" alt="panier d'achat">
-  <p>Login</p>
-</header>
+<?php include './partials/header.php'; ?>
 
 <body>
   <main>
@@ -57,11 +47,10 @@
     </section>
   </main>
 </body>
-<footer>
-  <a href="">Home</a>
-  <a href="">About</a>
-  <a href="">Product</a>
-  <a href="">Contact</a>
-</footer>
+<?php include './partials/footer.php'; ?>
 
 </html>
+
+<?php
+
+?>
