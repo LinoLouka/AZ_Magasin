@@ -7,11 +7,11 @@ html {
     );
     color: rgba(229, 231, 235, 255);
     input {
+      justify-self: center;
       outline: none;
       border: none;
     }
     #shoestop {
-      justify-self: center;
       background: linear-gradient(
         to right,
         rgba(59, 130, 246, 255) 60%,
@@ -21,7 +21,6 @@ html {
       width: 100px;
     }
     .shoes {
-      justify-self: center;
       background-color: #3b82f6;
       border-radius: 5px;
     }

@@ -4,17 +4,16 @@ html body {
   color: rgb(229, 231, 235);
 }
 html body input {
+  justify-self: center;
   outline: none;
   border: none;
 }
 html body #shoestop {
-  justify-self: center;
   background: linear-gradient(to right, rgb(59, 130, 246) 60%, rgb(31, 60, 141) 100%);
   border-radius: 5px;
   width: 100px;
 }
 html body .shoes {
-  justify-self: center;
   background-color: #3b82f6;
   border-radius: 5px;
 }
