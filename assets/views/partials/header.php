@@ -15,7 +15,7 @@
     <a href="">Product</a>
     <a href="">Contact</a>
     <div id="purshase">
-        <a href="/assets/views/shopping_cart.php">
+        <a href="./assets/views/shopping_cart.php">
             <img src="https://raw.githubusercontent.com/LinoLouka/AZ_Magasin/3ef0522ef23659144f7f8753972689d929a7bc56/assets/img/shopping-cart-white.svg" alt="panier d'achat">
         </a>
         <p>Login</p>
