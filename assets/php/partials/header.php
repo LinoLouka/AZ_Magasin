@@ -17,7 +17,7 @@
         <a href="">Contact</a>
     </div>
     <a href="">
-        <img src="https://raw.githubusercontent.com/LinoLouka/AZ_Magasin/e54b9a2a1be2b3549c48fc6b1b3580afaf46cb18/assets/shopping-cart.svg" alt="panier d'achat">
+        <img src="https://raw.githubusercontent.com/LinoLouka/AZ_Magasin/3ef0522ef23659144f7f8753972689d929a7bc56/assets/img/shopping-cart-white.svg" alt="panier d'achat">
     </a>
     <p>Login</p>
 </header>
