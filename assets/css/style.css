@@ -1,3 +1,8 @@
 body {
-  background-color: aqua;
+  text-align: center;
+  background: linear-gradient(rgb(17, 24, 39) 0%, rgb(0, 0, 0) 100%);
+  color: rgb(229, 231, 235);
+}
+body header img {
+  color: rgb(229, 231, 235);
 }/*# sourceMappingURL=style.css.map */
