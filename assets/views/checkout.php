@@ -42,8 +42,9 @@
                 <input type="number" class="form_input" name="zip_code" required><br><br>
             </div>
 
-            <div class="form_data"><label for="country">Country:</label>
-                <input type="text" class="form_input" required>
+            <div class="form_data">
+                <label for="country">Country:</label>
+                <input type="text" class="form_input" name="country" required>
             </div>
 
 
@@ -78,23 +79,6 @@ if (isset($_POST['submit'])) {
     $zipCode = sanitizeInput($_POST['zip_code']);
     $country = sanitizeInput($_POST['country']);
 
-
-    $data = [
-        'first_name' => $firstName,
-        'last_name' => $lastName,
-        'email' => $email,
-        'address' => $address,
-        'city' => $city,
-        'zip_code' => $zipCode,
-        'country' => $country
-    ];
-
-    $jsonData = json_encode($data);
-    file_put_contents("shopping-cart.json", $jsonData);
-
-
     echo "Thank you for your order!";
-
-    file_put_contents("shopping-cart.json", json_encode([]));
 }
 ?>
