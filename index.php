@@ -78,6 +78,6 @@
     </section>
   </main>
 </body>
-<?php include '/opt/lampp/htdocs/variable/AZ_Magasin/assets/views/partials/footer.php'; ?>
+<?php include './assets/views/partials/footer.php'; ?>
 
 </html>
