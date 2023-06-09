@@ -8,7 +8,7 @@
   <title>AZ_Magasin</title>
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<?php include './assets/views/partials/header.php'; ?>
+<?php include "./assets/views/partials/header.php"; ?>
 
 <body>
   <main>
@@ -20,8 +20,6 @@
     <section id="display_last-products">
       <h2>Our last products</h2>
       <?php
-
-
       $shoes = [
         [
           'id' => 1,
@@ -56,18 +54,45 @@
 
       $repeatedShoes = repeatShoes($shoes, 4);
 
-      // Afficher les chaussures
+      // Handle the button click event to add item to the shopping cart
+      if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+        if (isset($_POST['product']) && isset($_POST['price'])) {
+          $product = $_POST['product'];
+          $price = $_POST['price'];
+
+          $cartData = [];
+
+          if (file_exists('shopping-cart.json')) {
+            $cartData = json_decode(file_get_contents('shopping-cart.json'), true);
+          }
+
+          $cartData[] = [
+            'product' => $product,
+            'price' => $price
+          ];
+
+          file_put_contents('shopping-cart.json', json_encode($cartData));
+
+          echo '<div class="success">Item added to the shopping cart!</div>';
+        } else {
+          echo '<div class="error">Failed to add item to the shopping cart.</div>';
+        }
+      }
+
+      // Display the shoes
       foreach ($repeatedShoes as $shoe) {
         if ($shoe['id'] === 1) {
           echo '<div class="items">';
           echo '<img src="' . $shoe['image_url'] . '" alt="' . $shoe['product'] . '"><br>';
           echo '<p>Product: ' . $shoe['product'] . ', Price: ' . $shoe['price'], '</p>';
+          echo '<form method="POST">';
+          echo '<input type="hidden" name="product" value="' . $shoe['product'] . '">';
+          echo '<input type="hidden" name="price" value="' . $shoe['price'] . '">';
           echo '<input type="submit" class="shoes" value="Add to cart">';
+          echo '</form>';
           echo '</div>';
         }
       }
-
-
       ?>
     </section>
     <div id="bottom">
@@ -91,6 +116,7 @@
     </section>
   </main>
 </body>
-<?php include './assets/views/partials/footer.php'; ?>
+
+<?php include "./assets/views/partials/footer.php"; ?>
 
 </html>
