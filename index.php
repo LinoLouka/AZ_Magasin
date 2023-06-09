@@ -48,7 +48,7 @@
       foreach ($repeatedShoes as $shoe) {
         echo '<div class="items">';
         echo '<img src="' . $shoe['image_url'] . '" alt="' . $shoe['product'] . '"><br>';
-        echo 'Product: ' . $shoe['product'] . ', Price: ' . $shoe['price'] . '<br>';
+        echo '<p>Product: ' . $shoe['product'] . ', Price: ' . $shoe['price'], '</p>';
         echo '<input type="submit" class="shoes" value="Add to card">';
         echo '</div>';
       };
