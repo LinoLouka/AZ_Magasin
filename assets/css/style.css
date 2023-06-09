@@ -1,7 +1,7 @@
 html body {
   font-family: "Merriweather Sans", sans-serif;
   text-align: center;
-  background: linear-gradient(rgb(17, 24, 39) 70%, rgb(0, 0, 0) 100%);
+  background: linear-gradient(rgb(17, 24, 39) 70%, rgb(0, 0, 0) 100%) no-repeat;
   color: rgb(229, 231, 235);
 }
 html body input {
@@ -70,4 +70,18 @@ html body #checkout_form #checkout-btn-container #checkout-btn {
   height: 40px;
   background-color: #3b82f6;
   font-size: 25px;
-}/*# sourceMappingURL=style.css.map */
+}
+html body .shopping-cart-container table {
+  width: 100%;
+  border: none;
+  border-collapse: collapse;
+}
+html body .shopping-cart-container table th {
+  border-left: 1px solid #000;
+  border-right: 1px solid #000;
+}
+html body .shopping-cart-container table td {
+  margin-left: 5px;
+  border-left: 1px solid #000;
+  border-right: 1px solid #000;
+}
