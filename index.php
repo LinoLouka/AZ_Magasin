@@ -28,6 +28,12 @@
           'product' => 'Nike Air Max 270',
           'price' => 160,
           'image_url' => './assets/img/shoe_one.png'
+        ],
+        [
+          'id' => 2,
+          'product' => 'Nike Air Max 270',
+          'price' => 160,
+          'image_url' => './assets/img/shoe_two.png'
         ]
       ];
 
@@ -35,8 +41,14 @@
       {
         $result = [];
 
-        for ($i = 0; $i < $repetitions; $i++) {
-          $result = array_merge($result, $shoes);
+        foreach ($shoes as $shoe) {
+          if ($shoe['id'] === 1) {
+            for ($i = 0; $i < $repetitions; $i++) {
+              $result[] = $shoe;
+            }
+          } else {
+            $result[] = $shoe;
+          }
         }
 
         return $result;
@@ -46,16 +58,15 @@
 
       // Afficher les chaussures
       foreach ($repeatedShoes as $shoe) {
-        echo '<div class="items">';
-        echo '<img src="' . $shoe['image_url'] . '" alt="' . $shoe['product'] . '"><br>';
-        echo '<p>Product: ' . $shoe['product'] . ', Price: ' . $shoe['price'], '</p>';
-        echo '<input type="submit" class="shoes" value="Add to card">';
-        echo '</div>';
-      };
+        if ($shoe['id'] === 1) {
+          echo '<div class="items">';
+          echo '<img src="' . $shoe['image_url'] . '" alt="' . $shoe['product'] . '"><br>';
+          echo '<p>Product: ' . $shoe['product'] . ', Price: ' . $shoe['price'], '</p>';
+          echo '<input type="submit" class="shoes" value="Add to cart">';
+          echo '</div>';
+        }
+      }
 
-
-      $jsonData = json_encode($repeatedShoes);
-      file_put_contents("shopping-cart.json", $jsonData);
 
       ?>
     </section>
