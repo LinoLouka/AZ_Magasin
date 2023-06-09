@@ -40,22 +40,9 @@
         <a href="checkout.php">Proceed to checkout</a>
     </div>
     <?php
-    if (!isset($_SESSION['panier'])) {
-        $_SESSION['panier'] = array();
-    }
-
-    if (isset($_POST['add_panier'])) {
-        $product_id = $_POST['product_id'];
-        $_SESSION['panier'][$product_id] = 1;
-
-        // header('Location: index.php');
-        // exit();
-    }
-
-    if (isset($_GET['delete'])) {
-        $product_id = $_GET['delete'];
-        unset($_SESSION['panier'][$product_id]);
-    }
+    $filename = 'shopping-cart.json';
+    $data = file_get_contents($filename); //data read from json file
+    print_r($data);
     ?>
 
 </body>
