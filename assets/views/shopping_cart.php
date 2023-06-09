@@ -41,6 +41,7 @@
     </div>
     <?php
     $filename = 'shopping-cart.json';
+
     $data = file_get_contents($filename); //data read from json file
     print_r($data);
     ?>
