@@ -42,8 +42,9 @@
                 <input type="number" class="form_input" name="zip_code" required><br><br>
             </div>
 
-            <div class="form_data"><label for="country">Country:</label>
-                <input type="text" class="form_input" required>
+            <div class="form_data">
+                <label for="country">Country:</label>
+                <input type="text" class="form_input" name="country" required>
             </div>
 
 
