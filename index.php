@@ -51,6 +51,10 @@
         echo '<input type="submit" class="shoes" value="Add to card">';
       };
 
+
+      echo json_encode($repeatedShoes);
+
+
       ?>
     </section>
     <div id="bottom">
