@@ -60,6 +60,13 @@
 </html>
 
 <?php
+function sanitizeInput($input)
+{
+    $input = trim($input);
+    $input = stripslashes($input);
+    $input = htmlspecialchars($input);
+    return $input;
+}
 $shopping_cart = "";
 
 if (isset($_POST['submit'])) {
@@ -71,13 +78,6 @@ if (isset($_POST['submit'])) {
     $zipCode = sanitizeInput($_POST['zip_code']);
     $country = sanitizeInput($_POST['country']);
 
-    function sanitizeInput($input)
-    {
-        $input = trim($input);
-        $input = stripslashes($input);
-        $input = htmlspecialchars($input);
-        return $input;
-    }
 
     $data = [
         'first_name' => $firstName,
