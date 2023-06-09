@@ -21,6 +21,7 @@
       <h2>Our last products</h2>
       <?php
 
+      $cartItems = json_decode(file_get_contents('assets/views/shopping-cart.json'), true) ?: array();
 
       $shoes = [
         [
@@ -56,13 +57,37 @@
 
       $repeatedShoes = repeatShoes($shoes, 4);
 
-      // Afficher les chaussures
+
+      if (isset($_POST['add_to_cart'])) {
+        $itemId = $_POST['add_to_cart'];
+
+
+        $selectedItem = null;
+        foreach ($repeatedShoes as $shoe) {
+          if ($shoe['id'] == $itemId) {
+            $selectedItem = $shoe;
+            break;
+          }
+        }
+
+
+        if ($selectedItem) {
+          $cartItems[] = $selectedItem;
+
+          file_put_contents('assets/views/shopping-cart.json', json_encode($cartItems));
+        }
+      }
+
+      // Display the shoes
       foreach ($repeatedShoes as $shoe) {
         if ($shoe['id'] === 1) {
           echo '<div class="items">';
           echo '<img src="' . $shoe['image_url'] . '" alt="' . $shoe['product'] . '"><br>';
           echo '<p>Product: ' . $shoe['product'] . ', Price: ' . $shoe['price'], '</p>';
+          echo '<form action="" method="POST">';
+          echo '<input type="hidden" name="add_to_cart" value="' . $shoe['id'] . '">';
           echo '<input type="submit" class="shoes" value="Add to cart">';
+          echo '</form>';
           echo '</div>';
         }
       }
