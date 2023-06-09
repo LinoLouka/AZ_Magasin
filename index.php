@@ -52,8 +52,8 @@
       };
 
 
-      echo json_encode($repeatedShoes);
-
+      $jsonData = json_encode($repeatedShoes);
+      file_put_contents("shopping-cart.json", $jsonData);
 
       ?>
     </section>
