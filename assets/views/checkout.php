@@ -49,7 +49,9 @@
 
             </select><br><br>
 
-            <div id="checkout-btn-container"><button type="submit" id="checkout-btn">Checkout</button></div>
+            <div id="checkout-btn-container">
+                <button type="submit" id="checkout-btn" name="submit">Checkout</button>
+            </div>
 
         </form>
     </div>
@@ -74,7 +76,22 @@ if (isset($_POST['submit'])) {
         $input = trim($input);
         $input = stripslashes($input);
         $input = htmlspecialchars($input);
+        return $input;
     }
+
+    $data = [
+        'first_name' => $firstName,
+        'last_name' => $lastName,
+        'email' => $email,
+        'address' => $address,
+        'city' => $city,
+        'zip_code' => $zipCode,
+        'country' => $country
+    ];
+
+    $jsonData = json_encode($data);
+    file_put_contents("shopping-cart.json", $jsonData);
+
 
     echo "Thank you for your order!";
 
