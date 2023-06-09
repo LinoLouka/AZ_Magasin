@@ -20,6 +20,8 @@
     <section id="display_last-products">
       <h2>Our last products</h2>
       <?php
+
+
       $shoes = [
         [
           'id' => 1,
@@ -48,6 +50,7 @@
         echo 'Product: ' . $shoe['product'] . ', Price: ' . $shoe['price'] . '<br>';
         echo '<input type="submit" class="shoes" value="Add to card">';
       };
+
       ?>
     </section>
     <div id="bottom">
